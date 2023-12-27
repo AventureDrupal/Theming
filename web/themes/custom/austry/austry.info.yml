@@ -1,0 +1,29 @@
+name: austry
+type: theme
+description: "custom theme for aventure drupal theming course"
+core_version_requirement: ^9 || ^10
+base theme: classy
+regions:
+  header: 'Header'
+  footer: 'Footer'
+  content: 'Content'
+  search: 'Search'
+  help: 'Help'
+  breadcrumb: 'Breadcrumb'
+  primary_menu: 'primary_menu'
+screenshot: austry.png
+libraries:
+  - austry/austry-css
+  - austry/austry-js
+
+hidden: false
+logo: assets/images/ressources/logo-2.png
+features:
+  - comment_user_verification
+  - logo
+  - favicon
+  - node_user_picture
+libraries-override:
+  class/base:false
+stylesheets-remove:
+  - core/assets/vendor/normalize-css/normalize.css
