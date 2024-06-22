@@ -8,7 +8,9 @@ the [Drupal community][Drupal community].
 ## Installation
 
 For install this theming projet, you must:
-- clone this repository
-- install dependencies
-- create a database and import dump is in root dir (dump-aventureTheming-202406221505.sql)
-- change databased
+- Clone this repository
+- Install dependencies
+- Create a database and import dump is in root dir (dump-aventureTheming-202406221505.sql)
+- Update database params in sites/default/files/settings.php
+- Launch project and login [check video for params 😎]
+- ENJOY !!!
