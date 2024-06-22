@@ -1,0 +1,29 @@
+{% block paragraph %}
+
+	{% block content %}
+    
+		<div class="swiper-slide">
+			<div class="image-layer">
+            {{content.field_image}}
+            </div>
+			<!-- /.image-layer -->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="main-slider__content">
+							<h2 class="main-slider__title">{{content.field_title}}</h2>
+							<p class="main-slider__text">{{content.field_description|raw}}</p>
+							{% if content.field_lien[0]['#url'] %}
+							<div class="main-slider__btn-box">
+								<a href="{{content.field_lien[0]['#url']}}" class="thm-btn main-slider__btn">{{content.field_lien[0]['#title']}}</a>
+							</div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endblock %}
+
+{% endblock paragraph %}
